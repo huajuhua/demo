@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/fun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fun_button" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fun" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="2" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:weightSum="2" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.xm.video.MySurfaceView
+                        android:id="@+id/vv1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/wndsel"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通道号："
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.xm.video.MySurfaceView
+                        android:id="@+id/vv2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/wndsel"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通道号："
+                        android:textColor="@color/white" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:weightSum="2" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.xm.video.MySurfaceView
+                        android:id="@+id/vv3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/wndsel"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通道号："
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.xm.video.MySurfaceView
+                        android:id="@+id/vv4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/wndsel"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/num3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通道号："
+                        android:textColor="@color/white" />
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+
+        <com.xm.view.MyDirection
+            android:id="@+id/direction"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/catpureiv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="共有通道："
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

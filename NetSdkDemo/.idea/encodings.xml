@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/AlarmSettingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/DemoMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/DevSettingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/EncodeConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/FPSAlgorithm.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/MyWifiManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/PTZControlActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/PlayBackActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/RecordConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/netsdkdemo/SettingActivity.java" charset="GBK" />
+  </component>
+</project>
+

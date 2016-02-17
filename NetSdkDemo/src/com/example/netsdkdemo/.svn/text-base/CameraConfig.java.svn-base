@@ -1,0 +1,58 @@
+/**
+ * NetSdkDemo
+ * CameraConfig.java
+ * Administrator
+ * TODO
+ * 2014-7-15
+ */
+package com.example.netsdkdemo;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import com.xm.MyConfig.SdkConfigType;
+import com.xm.NetSdk;
+import com.xm.SDK_AllCameraParam;
+
+/**
+ * NetSdkDemo
+ * CameraConfig.java
+ * @author huangwanshui
+ * TODO
+ * 2014-7-15
+ */
+public class CameraConfig extends Activity {
+	private NetSdk netsdk;
+	private long mLoginId;
+	private SDK_AllCameraParam allCameraParam;
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.cameraconfig);
+		init();
+	}
+	private void init() {
+		Intent it = getIntent();
+		mLoginId = it.getLongExtra("LoginId", 0);
+		if(mLoginId <= 0)
+			return;
+		netsdk = NetSdk.getInstance();
+		allCameraParam = new SDK_AllCameraParam();
+		boolean bret = netsdk.H264DVRGetDevConfig(mLoginId,SdkConfigType.E_SDK_CONFIG_CAMERA,-1, allCameraParam, 5000);
+		if(bret) {
+			System.out.println("dnc_thr:"+allCameraParam.cameraParam[0].dayNightColor);
+		}
+	}
+	public void onSetConfig(View v) {
+		allCameraParam.cameraParam[0].dayNightColor = 0;
+		boolean bret = netsdk.H264DVRSetDevConfig(mLoginId,SdkConfigType.E_SDK_CONFIG_CAMERA,-1, allCameraParam, 5000);
+		if(bret)
+			System.out.println("dnc_thr:"+allCameraParam.cameraParam[0].dayNightColor);
+	}
+}

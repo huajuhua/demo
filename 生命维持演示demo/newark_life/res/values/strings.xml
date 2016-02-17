@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">新方舟</string>
+    <color name="yellow">#f39800</color>
+    <color name="blue">#4dc0ed</color>
+</resources>

@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+    android:background="#ffffff"
+    android:gravity="center"
+    >
+    <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   	android:layout_above="@+id/rl_bottom"
+        >
+		<RelativeLayout 
+		    android:id="@+id/rl"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+	    	>
+	    	<!-- 登陆方式 -->
+	    	<TextView
+		        android:id="@+id/txt_logintype"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:visibility="gone"
+		        android:textSize="18dp" />
+	    	<Spinner
+		        android:id="@+id/sp_logintype"
+		        android:layout_width="160dp"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		        android:layout_toRightOf="@+id/txt_logintype"/>
+	    	<!-- 序列号 -->
+		    <TextView
+		        android:id="@+id/txt_serial"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/txt_logintype"
+		        android:layout_marginTop="15dp"
+		        android:text="序列号"
+		        android:visibility="gone"
+		        android:textSize="18dp" />
+			<!-- "32f66bd0b152d5ce e0b6fc4d50597137" -->
+		    <EditText
+		        android:id="@+id/edt_serial"
+		        android:layout_width="160dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/sp_logintype"
+		        android:layout_toRightOf="@+id/txt_serial"
+		        android:text="10.40.40.101"
+		        android:visibility="gone"
+		        android:inputType="text"/>
+	    	<!-- IP地址 -->
+		    <TextView
+		        android:id="@+id/txt_ip"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/txt_serial"
+		        android:layout_marginTop="15dp"
+		        android:text="Ip/SN"
+		        android:visibility="visible"
+		        android:textSize="18dp" />
+		
+		    <EditText
+		        android:id="@+id/edt_ip"
+		        android:layout_width="160dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/edt_serial"
+		        android:layout_toRightOf="@+id/txt_ip"
+		        android:text="10.10.48.125"
+		        android:digits="1234567890."
+		        android:visibility="visible"
+		        android:inputType="text" />
+		    <!-- 端口 -->
+		
+		    <TextView
+		        android:id="@+id/txt_port"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/txt_ip"
+		        android:layout_marginTop="15dp"
+		        android:text="Port"
+		        android:visibility="gone"
+		        android:textSize="18dp" />
+		
+		    <EditText
+		        android:id="@+id/edt_port"
+		        android:layout_width="160dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/edt_ip"
+		        android:layout_toRightOf="@+id/txt_port"
+		        android:digits="1234567890"
+		        android:text="34567"
+		        android:visibility="gone"
+		        android:inputType="text" />
+		    <!-- 用户名 -->
+		
+		    <TextView
+		        android:id="@+id/txt_username"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/txt_port"
+		        android:layout_marginTop="15dp"
+		        android:text="UserName"
+		        android:textSize="18dp" />
+		
+		    <EditText
+		        android:id="@+id/edt_username"
+		        android:layout_width="160dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/edt_port"
+		        android:layout_toRightOf="@+id/txt_username"
+		        android:text="admin"
+		        android:inputType="text" />
+		    <!-- 密码 -->
+		
+		    <TextView
+		        android:id="@+id/txt_password"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/txt_username"
+		        android:layout_marginTop="15dp"
+		        android:text="PassWord"
+		        android:textSize="18dp" />
+		
+		    <EditText
+		        android:id="@+id/edt_password"
+		        android:layout_width="160dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/edt_username"
+		        android:layout_toRightOf="@+id/txt_password"
+		        android:text=""
+		        android:inputType="textPassword" />
+	    </RelativeLayout>
+    </ScrollView>
+    <!-- 登陆 -->
+
+	<RelativeLayout
+	    android:id="@+id/rl_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center" >
+
+	    <Button
+	        android:id="@+id/btn_add"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:text="确定" />
+	    <!-- 取消 -->
+	
+	    <Button
+	        android:id="@+id/btn_cancel"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="40dp"
+	        android:layout_toRightOf="@+id/btn_add"
+	        android:gravity="center"
+	        android:text="取消" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+	<ImageView 
+	    android:id="@+id/fluctuation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/fluctuation"
+	    />
+	<Button 
+	    android:id="@+id/cancelbtn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/fluctuation"
+	    android:text="取消"
+	    />
+</RelativeLayout>

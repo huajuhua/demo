@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4" >
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/login_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onLoginDevice"
+            android:text="登录" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/audioctrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="音频控制" />
+
+        <Button
+            android:id="@+id/voiceIntercom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="对讲" />
+
+        <Button
+            android:id="@+id/rapid_config"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="快速配置" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="配置" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/startrecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始录像" />
+
+        <Button
+            android:id="@+id/stoprecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止录像" />
+
+        <Button
+            android:id="@+id/playback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="录像回放" />
+
+        <Button
+            android:id="@+id/play_or_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPlayOrStop"
+            android:text="播放" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/ptzctrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="云台控制" />
+
+        <Button
+            android:id="@+id/change_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onChangeStream"
+            android:text="流畅" />
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="截图" />
+
+        <Button
+            android:id="@+id/devcapture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDevCapture"
+            android:text="远程抓图" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/ianalysis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="智能分析"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/startservice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开启后台服务"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/msgtest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onMsgTest"
+            android:text="短信发送测试"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/modify_dev_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onModifyDevPwd"
+            android:text="修改前端设备密码"
+            android:visibility="gone" />
+    </TableRow>
+
+</TableLayout>

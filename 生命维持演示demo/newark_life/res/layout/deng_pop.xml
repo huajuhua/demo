@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/deng_bg"
+        >
+
+    <ImageView
+            android:id="@+id/deng1"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="72px"
+            android:layout_marginRight="256px"
+            android:background="@drawable/deng_pop_off"/>
+    <ImageView
+            android:id="@+id/deng2"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="72px"
+            android:layout_marginRight="110px"
+            android:background="@drawable/deng_pop_off"/>
+    <ImageView
+            android:id="@+id/deng3"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="152px"
+            android:layout_marginRight="183px"
+            android:background="@drawable/deng_pop_off"/>
+    <ImageView
+            android:id="@+id/deng4"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="265px"
+            android:layout_marginRight="183px"
+            android:background="@drawable/deng_pop_off"/>
+    <ImageView
+            android:id="@+id/deng5"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="345px"
+            android:layout_marginRight="256px"
+            android:background="@drawable/deng_pop_off"/>
+    <ImageView
+            android:id="@+id/deng6"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="345px"
+            android:layout_marginRight="110px"
+            android:background="@drawable/deng_pop_off"/>
+
+</RelativeLayout>
+

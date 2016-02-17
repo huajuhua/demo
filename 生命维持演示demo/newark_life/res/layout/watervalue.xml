@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+
+    <ImageView android:layout_width="211px" android:layout_height="120px"
+
+               android:layout_marginTop="0px"
+               android:layout_marginLeft="0px"
+               android:id="@+id/emer_water_value_bg"
+
+            />
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+               android:layout_marginLeft="100px"
+               android:layout_marginTop="30px"
+               android:id="@+id/emer_water_flag"
+
+
+            />
+
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+               android:layout_marginLeft="253px"
+               android:layout_marginTop="0px"
+               android:background="@drawable/emer_water_value_icon"
+
+
+            />
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+              android:layout_marginLeft="230px"
+              android:layout_marginTop="60px"
+              android:id="@+id/emer_water_value"
+              android:textSize="40px"
+              android:textColor="@color/blue"
+
+
+            />
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+              android:layout_marginLeft="230px"
+              android:layout_marginTop="100px"
+              android:id="@+id/emer_water_value_text"
+              android:text="REFILLING"
+              android:textSize="20px"
+              android:textColor="@color/yellow"
+
+
+            />
+
+
+</RelativeLayout>

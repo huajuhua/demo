@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/newark_bg"
+        >
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+            >
+        <TextView
+                android:id="@+id/oxy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="145dp"
+                android:text="20.9%"
+                android:textSize="44sp"
+                android:textColor="@color/yellow"/>
+        <TextView
+                android:id="@+id/co2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="260dp"
+                android:text="0.03%"
+                android:textSize="24sp"
+                android:textColor="@color/blue"
+                android:visibility="invisible"/>
+        <TextView
+                android:id="@+id/wendu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="33dp"
+                android:text="25.7"
+                android:textSize="24sp"
+                android:textColor="@color/blue"/>
+        <TextView
+                android:id="@+id/shidu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="150dp"
+                android:text="45.8"
+                android:textSize="24sp"
+                android:textColor="@color/blue"/>
+        <TextView
+                android:id="@+id/qiya_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="222dp"
+                android:text="961"
+                android:textSize="24sp"
+                android:textColor="@color/blue"/>
+        <com.ark.newark_phone.OxyView
+                android:id="@+id/oxy01"
+                android:layout_width="220dp" android:layout_height="120dp"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="455dp"
+                />
+        <com.ark.newark_phone.OxyView
+                android:id="@+id/oxy02"
+                android:layout_width="220dp" android:layout_height="120dp"
+
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="455dp"
+                />
+        <com.ark.newark_phone.OxyView
+                android:id="@+id/oxy03"
+                android:layout_width="220dp" android:layout_height="120dp"
+
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="455dp"
+                />
+        <com.ark.newark_phone.Battary
+                android:id="@+id/battary"
+                android:layout_width="320dp" android:layout_height="120dp"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="360dp"
+                />
+        <com.ark.newark_phone.WaterView
+                android:id="@+id/waterview"
+                android:layout_width="420dp" android:layout_height="140dp"
+
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="360dp"
+                />
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+        >
+    <ImageView
+            android:id="@+id/battary_img"
+            android:layout_width="260px"
+            android:layout_height="103px"
+            android:background="@drawable/battary01"/>
+    <TextView
+            android:id="@+id/battary_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24%"
+            android:textSize="32sp"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="5px"/>
+</LinearLayout>

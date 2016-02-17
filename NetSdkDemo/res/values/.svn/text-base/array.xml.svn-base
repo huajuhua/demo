@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_labels">
+        <item>NAT</item>
+        <item>DHCP</item>
+        <item>DDNS</item>
+        <item>UPNP</item>
+        <item>ALARM_IN</item>
+        <item>ALARM_OUT</item>
+        <item>DEVICE_LOG</item>
+        <item>SET_IP</item>
+        <item>WIFI_SET</item>
+        <item>WIFI_STATE</item>
+        <item>DNS</item>
+        <item>NETWORK</item>
+    </string-array>
+</resources>

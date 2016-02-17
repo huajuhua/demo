@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SNS/!svn/ver/6055/Android/Trunk/NetSdkDemo/res/layout
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SNS/!svn/ver/6375/Android/Trunk/NetSdkDemo/res/layout/activity_main.xml
+END
+playback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/SNS/!svn/ver/6375/Android/Trunk/NetSdkDemo/res/layout/playback.xml
+END
+voiceintercom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SNS/!svn/ver/6055/Android/Trunk/NetSdkDemo/res/layout/voiceintercom.xml
+END
+filelist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/SNS/!svn/ver/6055/Android/Trunk/NetSdkDemo/res/layout/filelist.xml
+END
